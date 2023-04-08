@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "courier new";
+  box-sizing: border-box;
+  background-color: rgb(200, 200, 200);
+}
+
+
+/* fixed nav-bar w/title and logo */
+
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: solid 1px #dddddd
+}
+
+h1 {
+  font-size: 5rem;
+  margin-left: 10%;
+}
+
+#nav-bar {
+  width: 25%;
+  margin-right: 5%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li {
+  list-style: none;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#header-img {
+  width: 20%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+/* main page sections */
+
+#greeting {
+  margin-top: 15%;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  font-size: 5rem;
+}
+
+#about {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  font-size: 3rem
+}
+
+#gallery-title {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  font-size: 5rem;
+}
+
+#video-gallery {
+  width: 80%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 560px);
+  justify-content: space-between;
+  grid-row-gap: 5rem;
+}
+
+#contact {
+  text-align: center;
+  font-size: 3rem;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 5rem;
+  margin-top: 10rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-left: 25%;
+}
+
+input {
+  height: 5rem;
+}
+
+#email {
+  width: 30rem;
+  padding-left: 10px;
+  font-size: 2rem;
+  margin-right: 5rem;
+}
+
+#submit {
+  width: 10rem;
+  font-size: 2rem;
+}
+
+#footer {
+  width: 20%;
+  text-align: center;
+  margin: 5rem auto;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  #nav-bar {
+    text-align: center;
+
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  ul li {
+    font-size: 2rem;
+  }
+
+  #greeting {
+    margin-top: 30%;
+  }
+
+  #video-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
